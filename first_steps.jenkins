@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+	
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
+        timestamps()
+    }
+	
+	stages {
+		stage ('First Step') {
+			steps {
+				echo "Start"
+				echo "Processing..."
+				echo "The end"
+		}}
+	}
+    }
