@@ -10,7 +10,7 @@ pipeline {
 		stage ('First Step') {
 			steps {
 				echo "Start"
-				echo "Processing..."
+				echo "Processing"
 				echo "The end"
 		}}
 	}
